@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "csv-parse": "^5.5.3",
     "express": "^4.18.2",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "ztm-nasa-project": "file:.."
   }
 }

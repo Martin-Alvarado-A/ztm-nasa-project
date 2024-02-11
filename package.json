@@ -1,0 +1,29 @@
+{
+  "name": "ztm-nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "concurrently \"npm:install-server\" \"npm:install-client\"",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "concurrently -k \"npm:server\" \"npm:client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martin-Alvarado-A/ztm-nasa-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martin-Alvarado-A/ztm-nasa-project/issues"
+  },
+  "homepage": "https://github.com/Martin-Alvarado-A/ztm-nasa-project#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
