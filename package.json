@@ -11,7 +11,7 @@
     "client": "npm start --prefix client",
     "watch": "concurrently -k \"npm:server\" \"npm:client\"",
     "deploy": "concurrently -g \"npm run build --prefix client\" \"npm start --prefix server\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "concurrently -g \"npm test --prefix server\" \"npm test --prefix client\""
   },
   "repository": {
     "type": "git",
